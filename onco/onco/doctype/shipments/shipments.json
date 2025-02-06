@@ -30,7 +30,7 @@
   "column_break_tbjb",
   "bank_authenticating_date",
   "4_restricted_release_statu_section",
-  "check_qtlw",
+  "restricted_release_status",
   "column_break_nwul",
   "restricted_release_date",
   "5_customs_release_status_section",
@@ -152,11 +152,6 @@
    "label": "4 Restricted release statu "
   },
   {
-   "default": "0",
-   "fieldname": "check_qtlw",
-   "fieldtype": "Check"
-  },
-  {
    "fieldname": "column_break_nwul",
    "fieldtype": "Column Break"
   },
@@ -245,12 +240,18 @@
    "fieldname": "manufacturing_date_",
    "fieldtype": "Date",
    "label": "Manufacturing date"
+  },
+  {
+   "default": "0",
+   "fieldname": "restricted_release_status",
+   "fieldtype": "Check",
+   "label": "Restricted release status"
   }
  ],
  "index_web_pages_for_search": 1,
  "is_submittable": 1,
  "links": [],
- "modified": "2025-02-06 11:58:50.475166",
+ "modified": "2025-02-06 12:45:06.307738",
  "modified_by": "Administrator",
  "module": "Onco",
  "name": "Shipments",

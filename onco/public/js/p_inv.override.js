@@ -64,6 +64,30 @@
                                       frm.set_value("manufacturing_date_",receipt.manufacturing_date_);
                                       frm.set_value("awb_no",receipt.awb_no);
                                       frm.set_value("awb_date",receipt.awb_date);
+
+                                      frm.set_value("arrived_",receipt.arrived);
+                                      frm.set_value("arrivail_date",receipt.arrivail_date);
+                                      frm.set_value("bank_authenticated_",receipt.bank_authenticated);
+                                      frm.set_value("bank_authenticating_date",receipt.bank_authenticating_date);
+                                      frm.set_value("restricted_release_status",receipt.restricted_release_status);
+                                      frm.set_value("restricted_release_date",receipt.restricted_release_date);
+                                      frm.set_value("customs_release_status",receipt.customs_release_status);
+                                      frm.set_value("customs_release_no",receipt.customs_release_no);
+                                      frm.set_value("customs_release_date",receipt.customs_release_date);
+
+                                      frm.set_value("instructions",receipt.instructions);
+                                      frm.set_value("remarks",receipt.remarks);
+                                      frm.set_value("is_internal_supplier",receipt.is_internal_supplier);
+
+
+
+
+
+
+
+
+
+
                                   },1000)
                                       
 
