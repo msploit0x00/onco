@@ -25,19 +25,20 @@ def set_shipment_id(purchase_inv,ship):
 def get_shipment(purchase_invoice,rec):
     invoice = frappe.get_doc("Purchase Invoice", purchase_invoice)
     ship_id = invoice.get("custom_shipments")
+    print(f"Shipment\n\n\n{ship_id}")
     shipment = frappe.get_doc("Shipments", ship_id)
-
+    if not shipment:
+        frappe.throw(f"No shipment data")
     return shipment
 @frappe.whitelist()
-def set_shipment(rec):
+def set_shipment(doc_shipments, rec):
     try:
-        if isinstance(rec, str):  # Ensure rec is a JSON string before loading
-            p_receipt = json.loads(rec)
+        if isinstance(rec, str): 
+            receipt = json.loads(rec)
+            shipments = json.loads(doc_shipments)
         else:
-            p_receipt = rec  # If already a dict, use it directly
-
-        p_receipt["p_receipt"] = 1
-        frappe.msgprint("Done")
-        return p_receipt["p_receipt"]
+            receipt = rec  
+        return shipments
+    
     except Exception as e:
-        frappe.throw(str(e))  
+        frappe.throw(str(e))

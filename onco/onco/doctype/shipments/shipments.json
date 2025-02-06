@@ -9,16 +9,16 @@
   "purchase_invoice",
   "awb",
   "invoice",
-  "certificate_of_analysis",
+  "certificate_of_analysis_",
   "certificate_of_origin",
-  "certificate_of_euro_1",
-  "attach_lfiq",
+  "certificate_of_euro_1_",
+  "certificate_of_insurance_",
   "column_break_lmek",
   "invoice_no",
   "invoice_date",
   "batch_no",
   "expiry_date",
-  "manufacturing_date",
+  "manufacturing_date_",
   "awb_no",
   "awb_date",
   "2_arrival_status_section",
@@ -68,23 +68,9 @@
    "label": "Invoice"
   },
   {
-   "fieldname": "certificate_of_analysis",
-   "fieldtype": "Attach",
-   "label": "Certificate of analysis"
-  },
-  {
    "fieldname": "certificate_of_origin",
    "fieldtype": "Attach",
    "label": "Certificate of origin"
-  },
-  {
-   "fieldname": "certificate_of_euro_1",
-   "fieldtype": "Attach",
-   "label": "Certificate of EURO 1"
-  },
-  {
-   "fieldname": "attach_lfiq",
-   "fieldtype": "Attach"
   },
   {
    "fieldname": "column_break_lmek",
@@ -109,11 +95,6 @@
    "fieldname": "expiry_date",
    "fieldtype": "Date",
    "label": "Expiry date"
-  },
-  {
-   "fieldname": "manufacturing_date",
-   "fieldtype": "Date",
-   "label": "Manufacturing date"
   },
   {
    "fieldname": "awb_no",
@@ -244,12 +225,32 @@
    "fieldname": "remarks",
    "fieldtype": "Text",
    "label": "Remarks"
+  },
+  {
+   "fieldname": "certificate_of_analysis_",
+   "fieldtype": "Attach",
+   "label": "Certificate of analysis"
+  },
+  {
+   "fieldname": "certificate_of_euro_1_",
+   "fieldtype": "Attach",
+   "label": "Certificate of EURO 1"
+  },
+  {
+   "fieldname": "certificate_of_insurance_",
+   "fieldtype": "Attach",
+   "label": "Certificate of insurance"
+  },
+  {
+   "fieldname": "manufacturing_date_",
+   "fieldtype": "Date",
+   "label": "Manufacturing date"
   }
  ],
  "index_web_pages_for_search": 1,
  "is_submittable": 1,
  "links": [],
- "modified": "2025-02-04 16:18:22.507695",
+ "modified": "2025-02-06 11:58:50.475166",
  "modified_by": "Administrator",
  "module": "Onco",
  "name": "Shipments",
