@@ -16,6 +16,7 @@ def set_shipment_id(purchase_inv,ship):
         try:
             invoice = frappe.get_doc("Purchase Invoice", purchase_inv)
             invoice.db_set("custom_shipments",ship)
+            invoice.db_set("custom_is_shiped",1)
             return invoice
         except frappe.DoesNotExistError:
             frappe.throw(_("Purchase Invoice not found"))
