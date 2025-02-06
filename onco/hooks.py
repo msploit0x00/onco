@@ -10,10 +10,6 @@ app_license = "mit"
 
 # required_apps = []
 
-fixtures = ["Custom Field"]
-
-
-
 # Each item in the list will be shown as an app in the apps page
 # add_to_apps_screen = [
 # 	{
@@ -47,6 +43,9 @@ fixtures = ["Custom Field"]
 # page_js = {"page" : "public/js/file.js"}
 
 # include js in doctype views
+doctype_js = {
+    "Purchase Invoice": "public/js/p_inv.override.js",
+}
 # doctype_js = {"doctype" : "public/js/doctype.js"}
 # doctype_list_js = {"doctype" : "public/js/doctype_list.js"}
 # doctype_tree_js = {"doctype" : "public/js/doctype_tree.js"}
