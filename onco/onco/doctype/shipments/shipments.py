@@ -29,7 +29,7 @@ def get_shipment(purchase_invoice,rec):
     print(f"Shipment\n\n\n{ship_id}")
     shipment = frappe.get_doc("Shipments", ship_id)
     if not shipment:
-        frappe.throw(f"No shipment data !")
+        frappe.throw(f"No shipment data !!")
     return shipment
 @frappe.whitelist()
 def set_shipment(doc_shipments, rec):
